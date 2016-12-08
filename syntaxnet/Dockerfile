@@ -24,7 +24,7 @@ RUN cd $SYNTAXNETDIR/models/syntaxnet \
 
 WORKDIR $SYNTAXNETDIR/models/syntaxnet
 
-CMD [ "sh", "-c", "echo 'Bob brought the pizza to Alice.' | syntaxnet/demo.sh" ]
+CMD [ "sh", "-c", "syntaxnet/demo.sh" ]
 
 # COMMANDS to build and run
 # ===============================
