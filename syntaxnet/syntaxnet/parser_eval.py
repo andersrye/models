@@ -106,8 +106,8 @@ def EvalForever(sess):
         beam_size=FLAGS.beam_size,
         max_steps=FLAGS.max_steps)
   while True:
-      if not Eval(sess, parser, task_context):
-          break
+    if not Eval(sess, parser, task_context):
+        break
 
 def Eval(sess, parser, task_context):
   parser.AddEvaluation(task_context,
